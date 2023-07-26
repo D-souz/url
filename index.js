@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const app = express();
-
+const mongoose = require('mongoose');
 // Basic Configuration
 const port = process.env.PORT || 3000;
 
@@ -15,7 +15,7 @@ app.get('/', function(req, res) {
 });
 
 // The post API endpoint
-app.post('api/shorturl', function(req, res) {
+app.post('/api/shorturl', function(req, res) {
   res.json({ greeting: 'hello world' });
 });
 
