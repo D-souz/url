@@ -15,7 +15,7 @@ app.get('/', function(req, res) {
 });
 
 // The post API endpoint
-app.post('/api/hello', function(req, res) {
+app.post('api/shorturl', function(req, res) {
   res.json({ greeting: 'hello world' });
 });
 
